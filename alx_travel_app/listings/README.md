@@ -110,3 +110,20 @@ Make sure to add `listings` to `INSTALLED_APPS` in your project’s `settings.py
 - UUIDs are used for better uniqueness and security in IDs.
 - Booking is a one-to-one relationship to ensure one booking per listing at a time.
 - Timezone-aware datetimes are expected if `USE_TZ = True` in `settings.py`.
+
+📦 API Views: ListingView and BookingView
+In this project, we've created two API views using Django REST Framework's ModelViewSet to manage the Listing and Booking models.
+
+ModelViewSet is a high-level class provided by DRF that automatically provides implementations for all the standard CRUD operations (Create, Retrieve, Update, Delete, and List). This saves time and avoids writing repetitive boilerplate code.
+### These are the endpoints
+
+- GET /listings/ → List all listings
+
+- POST /listings/ → Create a new listing
+
+- GET /listings/<id>/ → Retrieve a specific listing
+
+- PUT /listings/<id>/ → Update a listing
+
+- DELETE /listings/<id>/ → Delete a listing
+
